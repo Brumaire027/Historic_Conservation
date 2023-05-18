@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+<title>精选资源</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+<!--头部图片-->
+<img class="headpic" src="pic6-1.jpg">
+
+<!--导航栏-->
+<ul class="navbar">
+	<div class="center">
+		<li><a class="active" href="../main/main.html">精选资源</a></li>
+		<li><a href="../stone/stone.html">瓦石相关</a></li>
+		<li><a href="../wood/wood.html">木作相关</a></li>
+		<li><a href="../about/about.html">关于我们</a></li>
+	</div>
+</ul>
+
+
+<!--导航栏2-->
+<div class="navbar2">
+	<img src="menu.svg" id="navbar-menu" style="float:left">
+	<a href="../login/login.html"><img src="account.svg" id="navbar-account" style="float:right"></a>
+</div>
+<!-- 抽屉展开后的遮罩 -->
+<div class="mask"></div>
+<!-- 左侧抽屉 -->
+<div class="drawer">
+	<img src="nav.jpg" id="drawerpic">
+	<ul class="drawernav">
+		<li><a class="active" href="../main/main.html">精选资源</a></li>
+		<li><a href="../stone/stone.html">瓦石相关</a></li>
+		<li><a href="../wood/wood.html">木作相关</a></li>
+		<li><a href="../about/about.html">关于我们</a></li>
+	</ul>
+</div>
+<!-- js：左侧抽屉 -->
+<script>
+var body = document.body;
+var menu = document.getElementById("navbar-menu");
+var drawer = document.querySelector(".drawer");
+var mask = document.querySelector(".mask");
+menu.onclick = function()
+{
+  drawer.style.left = "0";
+  mask.style.display = "block";
+  body.style.overflow = "hidden";
+}
+mask.onclick = function()
+{
+    drawer.style.left = "-300px";
+    mask.style.display = "none";
+	body.style.overflow = "auto";
+}
+</script>
+
+	
+<!--模态窗口(图片)-->
+<div id="myModal" class="modal">
+  <img class="modal-content" id="pop_pic">
+  <div id="caption"></div>
+</div>
+
+
+
+<!--容器-->
+
+<div class="container">
+
+	<div class="unit">
+			<img class="unit_pic" id="pic1" src="stone_1.jpg" alt=" 永受嘉福瓦当模型 ">
+			<div class="unit_text_pic"> 永受嘉福瓦当模型 <a href="../stone/stone.html" target="_blank">#瓦石相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+		// 获取模态窗口
+		var modal = document.getElementById("myModal");
+		var body = document.body;
+		// 获取图片模态框，alt 属性作为图片弹出中文本描述
+		var img = document.getElementById("pic1");
+		var modalImg = document.getElementById("pop_pic");
+		var captionText = document.getElementById("caption");
+		img.onclick = function()
+		{
+			modal.style.display = "flex";
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+		}
+
+		//关闭模态窗口
+		modal.onclick = function()
+		{ 
+			modal.style.display = "none";
+		}
+		</script>
+		</div>
+		
+	<div class="unit">
+			<img class="unit_pic" id="pic2" src="wood_1.jpg" alt=" 清官式麻叶头模型 ">
+			<div class="unit_text_pic"> 清官式麻叶头模型 <a href="../wood/wood.html" target="_blank">#木作相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+		// 获取模态窗口
+		var modal = document.getElementById("myModal");
+		var body = document.body;
+		// 获取图片模态框，alt 属性作为图片弹出中文本描述
+		var img = document.getElementById("pic2");
+		var modalImg = document.getElementById("pop_pic");
+		var captionText = document.getElementById("caption");
+		img.onclick = function()
+		{
+			modal.style.display = "flex";
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+		}
+
+		// 关闭模态窗口
+		modal.onclick = function()
+		{ 
+			modal.style.display = "none";
+		}
+		</script>
+		</div>
+	<div class="unit">
+			<img class="unit_pic" id="pic3" src="stone_2.JPG" alt=" 永受嘉福瓦当拓印 ">
+			<div class="unit_text_pic"> 永受嘉福瓦当拓印 <a href="../stone/stone.html" target="_blank">#瓦石相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+		// 获取模态窗口
+		var modal = document.getElementById("myModal");
+		// 获取图片模态框，alt 属性作为图片弹出中文本描述
+		var img = document.getElementById("pic3");
+		var modalImg = document.getElementById("pop_pic");
+		var captionText = document.getElementById("caption");
+		img.onclick = function()
+		{
+			modal.style.display = "flex";
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+		}
+
+		//关闭模态窗口
+		modal.onclick = function()
+		{ 
+			modal.style.display = "none";
+		}
+		</script>
+		</div>
+	<div class="unit">
+		<img class="unit_pic" id="pic12" src="wood_2.jpg" alt=" 清官式麻叶头拓印 ">
+		<div class="unit_text_pic"> 清官式麻叶头拓印 <a href="../wood/wood.html" target="_blank">#木作相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic4");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+	</div>
+	<div class="unit">
+		<img class="unit_pic" id="pic13" src="stone_3.JPG" alt=" 永受嘉福瓦当拓印 ">
+		<div class="unit_text_pic"> 永受嘉福瓦当拓印 <a href="../stone/stone.html" target="_blank">#瓦石相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic13");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+	</div>
+	<div class="unit">
+		<img class="unit_pic" id="pic15" src="wood_3.jpg" alt=" 清官式麻叶头图片 ">
+		<div class="unit_text_pic"> 清官式麻叶头图片 <a href="../wood/wood.html" target="_blank">#木作相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic15");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+	</div>
+	<div class="unit">
+		<img class="unit_pic" id="pic16" src="stone_4.jpg" alt=" 永受嘉福瓦当图片 ">
+		<div class="unit_text_pic"> 永受嘉福瓦当图片 <a href="../stone/stone.html" target="_blank">#瓦石相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic16");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+	</div>
+	<div class="unit">
+		<img class="unit_pic" id="pic17" src="wood_4.jpg" alt=" 清官式麻叶头图片 ">
+		<div class="unit_text_pic"> 清官式麻叶头图片 <a href="../wood/wood.html" target="_blank">#木作相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic17");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+	</div>
+	<div class="unit">
+		<img class="unit_pic" id="pic18" src="stone_5.jpg" alt=" 永受嘉福瓦当图片 ">
+		<div class="unit_text_pic"> 永受嘉福瓦当图片 <a href="../stone/stone.html" target="_blank">#瓦石相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic18");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+	</div>
+	<div class="unit">
+		<img class="unit_pic" id="pic6" src="stone_6.jpg" alt=" 受永嘉福瓦当硅胶模具 ">
+		<div class="unit_text_pic"> 受永嘉福瓦当硅胶模具 <a href="../stone/stone.html" target="_blank">#瓦石相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic6");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex"
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+	</div>
+	<!--图片卡片5-->
+	<div class="unit">
+		<img class="unit_pic" id="pic7" src="stone_7.jpg" alt=" 受永嘉福瓦当硅胶图片 ">
+		<div class="unit_text_pic"> 受永嘉福瓦当硅胶图片 <a href="../stone/stone.html" target="_blank">#瓦石相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic7");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex"
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+
+	</div>
+	<div class="unit">
+		<img class="unit_pic" id="pic8" src="stone_4.jpg" alt=" 受永嘉福瓦当硅胶拓印 ">
+		<div class="unit_text_pic"> 受永嘉福瓦当硅胶拓印 <a href="../stone/stone.html" target="_blank">#瓦石相关#</a></div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic8");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex"
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+	</div>
+</div>
+
+<br>
+
+</body>
+</html>

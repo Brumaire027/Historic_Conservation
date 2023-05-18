@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+<title>瓦石相关</title>
+<link rel="stylesheet" type="text/css" href="pic.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+<!--头部图片-->
+<img class="headpic" src="pic6-1.jpg">
+
+<!--导航栏-->
+
+	<ul class="navbar">
+	<div class="center">
+		<li><a href="../main/main.html">精选资源</a></li>
+		<li><a class="active" href="/stone.html">瓦石相关</a></li>
+		<li><a href="../wood/wood.html">木作相关</a></li>
+		<li><a href="../about/about.html">关于我们</a></li>
+<!--		<li style="float:right"><a href="../login/login.html">登录</a></li>-->
+	</div>
+	</ul>
+	
+<!--导航栏2-->
+<div class="navbar2">
+	<img src="menu.svg" id="navbar-menu" style="float:left">
+	<a href="../login/login.html"><img src="account.svg" id="navbar-account" style="float:right"></a>
+</div>
+<!-- 抽屉展开后的遮罩 -->
+<div class="mask"></div>
+<!-- 左侧抽屉 -->
+<div class="drawer">
+	<img src="nav.jpg" id="drawerpic">
+	<ul class="drawernav">
+		<li><a href="../main/main.html">精选资源</a></li>
+		<li><a class="active" href="/stone.html">瓦石相关</a></li>
+		<li><a href="../wood/wood.html">木作相关</a></li>
+		<li><a href="../about/about.html">关于我们</a></li>
+<!--		<li style="float:right"><a href="../login/login.html">登录</a></li>-->
+	</ul>
+</div>
+<!-- js：左侧抽屉 -->
+<script>
+var body = document.body;
+var menu = document.getElementById("navbar-menu");
+var drawer = document.querySelector(".drawer");
+var mask = document.querySelector(".mask");
+menu.onclick = function()
+{
+  drawer.style.left = "0";
+  mask.style.display = "block";
+  body.style.overflow = "hidden";
+}
+mask.onclick = function()
+{
+    drawer.style.left = "-300px";
+    mask.style.display = "none";
+	body.style.overflow = "auto";
+}
+</script>
+
+	
+<!--模态窗口(图片)-->
+<div id="myModal" class="modal">
+  <img class="modal-content" id="pop_pic">
+  <div id="caption"></div>
+</div>
+
+
+<!--容器-->
+
+<div class="container">
+
+	<!--第1列-->
+	<!-- <div class="column"> -->
+		<!--图片卡片1-->
+		<div class="unit">
+			<img class="unit_pic" id="pic1" src="stone_1.jpg" alt=" 永受嘉福瓦当模型 ">
+			<div class="unit_text_pic"> 永受嘉福瓦当模型 </div>
+
+		<!--js：弹出大图-->
+		<script>
+		// 获取模态窗口
+		var modal = document.getElementById("myModal");
+		// 获取图片模态框，alt 属性作为图片弹出中文本描述
+		var img = document.getElementById("pic1");
+		var modalImg = document.getElementById("pop_pic");
+		var captionText = document.getElementById("caption");
+		img.onclick = function()
+		{
+			modal.style.display = "flex"
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+		}
+
+		//关闭模态窗口
+		modal.onclick = function()
+		{ 
+			modal.style.display = "none";
+		}
+		</script>
+		</div>
+		<!--图片卡片2-->
+		<div class="unit">
+			<img class="unit_pic" id="pic2" src="stone_2.JPG" alt=" 永受嘉福瓦当拓印 ">
+			<div class="unit_text_pic"> 永受嘉福瓦当拓印 </div>
+		<!--js：弹出大图-->
+		<script>
+		// 获取模态窗口
+		var modal = document.getElementById("myModal");
+		// 获取图片模态框，alt 属性作为图片弹出中文本描述
+		var img = document.getElementById("pic2");
+		var modalImg = document.getElementById("pop_pic");
+		var captionText = document.getElementById("caption");
+		img.onclick = function()
+		{
+			modal.style.display = "flex"
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+		}
+
+		//关闭模态窗口
+		modal.onclick = function()
+		{ 
+			modal.style.display = "none";
+		}
+		</script>
+		</div>
+		<!--图片卡片3-->
+		<div class="unit">
+			<img class="unit_pic" id="pic3" src="stone_3.JPG" alt=" 永受嘉福瓦当拓印 ">
+			<div class="unit_text_pic"> 永受嘉福瓦当拓印 </div>
+		<!--js：弹出大图-->
+		<script>
+		// 获取模态窗口
+		var modal = document.getElementById("myModal");
+		// 获取图片模态框，alt 属性作为图片弹出中文本描述
+		var img = document.getElementById("pic3");
+		var modalImg = document.getElementById("pop_pic");
+		var captionText = document.getElementById("caption");
+		img.onclick = function()
+		{
+			modal.style.display = "flex"
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+		}
+
+		//关闭模态窗口
+		modal.onclick = function()
+		{ 
+			modal.style.display = "none";
+		}
+		</script>
+		</div>
+		<!--图片卡片4-->
+		<div class="unit">
+			<img class="unit_pic" id="pic4" src="stone_4.jpg" alt=" 永受嘉福瓦当图片 ">
+			<div class="unit_text_pic"> 永受嘉福瓦当图片 </div>
+		<!--js：弹出大图-->
+		<script>
+		// 获取模态窗口
+		var modal = document.getElementById("myModal");
+		// 获取图片模态框，alt 属性作为图片弹出中文本描述
+		var img = document.getElementById("pic4");
+		var modalImg = document.getElementById("pop_pic");
+		var captionText = document.getElementById("caption");
+		img.onclick = function()
+		{
+			modal.style.display = "flex"
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+		}
+
+		//关闭模态窗口
+		modal.onclick = function()
+		{ 
+			modal.style.display = "none";
+		}
+		</script>
+		</div>
+		<!--图片卡片5-->
+		<div class="unit">
+			<img class="unit_pic" id="pic5" src="stone_5.jpg" alt=" 永受嘉福瓦当图片 ">
+			<div class="unit_text_pic"> 永受嘉福瓦当图片 </div>
+		<!--js：弹出大图-->
+		<script>
+		// 获取模态窗口
+		var modal = document.getElementById("myModal");
+		// 获取图片模态框，alt 属性作为图片弹出中文本描述
+		var img = document.getElementById("pic5");
+		var modalImg = document.getElementById("pop_pic");
+		var captionText = document.getElementById("caption");
+		img.onclick = function()
+		{
+			modal.style.display = "flex"
+			modalImg.src = this.src;
+			modalImg.alt = this.alt;
+			captionText.innerHTML = this.alt;
+		}
+
+		//关闭模态窗口
+		modal.onclick = function()
+		{ 
+			modal.style.display = "none";
+		}
+		</script>
+
+		</div>
+	<div class="unit">
+		<div class="unit_text_normal" id="text2-1">
+			永受嘉福瓦当
+			<br><br>
+			西汉“永受嘉福”瓦当 直径15.7cm，是汉代文字瓦当中不可多得的佳品。出自《汉书 礼乐志〈安世房中歌十七章〉》：“其诗曰：承帝明德，师象山则。云施称民，永受厥福。承容之常，承帝之明。下民安乐，受福无疆。”“永受嘉福”为祈福之语。当面单线十字界格，每格一字即永受嘉福，字体为鸟虫篆，古人巧妙地将篆体文字和鸟虫形状合为一体，布局疏密均匀，线条盘曲蜿蜒，令人叹为观止。永受嘉福：永，为永远长久之义。受，即接受、授予。嘉，吉祥、美好。嘉福，即吉祥的美好的正能量的福报。永受嘉福，既有接受嘉福，又有把嘉福赐予别人之义，只有懂得奉献，才能获得嘉福。显然，“永受嘉福”，就是一个寓意十分美好的、祈福消灾的吉祥语。
+			<br><a href="../stone/stone.html" target="_blank"></a>
+		</div>
+		<!--js：弹出框-->
+		<script>
+			// 获取模态窗口
+			var modal2 = document.getElementById("myModal2");
+			// 获取文本模态框
+			var text = document.getElementById("text2-1");
+			text.onclick = function()
+			{
+				modal2.style.display = "block";
+				document.getElementById("para").innerHTML="永受嘉福瓦当<br><br>\t\t\t西汉“永受嘉福”瓦当 直径15.7cm，是汉代文字瓦当中不可多得的佳品。出自《汉书 礼乐志〈安世房中歌十七章〉》：“其诗曰：承帝明德，师象山则。云施称民，永受厥福。承容之常，承帝之明。下民安乐，受福无疆。”“永受嘉福”为祈福之语。当面单线十字界格，每格一字即永受嘉福，字体为鸟虫篆，古人巧妙地将篆体文字和鸟虫形状合为一体，布局疏密均匀，线条盘曲蜿蜒，令人叹为观止。永受嘉福：永，为永远长久之义。受，即接受、授予。嘉，吉祥、美好。嘉福，即吉祥的美好的正能量的福报。永受嘉福，既有接受嘉福，又有把嘉福赐予别人之义，只有懂得奉献，才能获得嘉福。显然，“永受嘉福”，就是一个寓意十分美好的、祈福消灾的吉祥语。\n";
+			}
+
+			// 获取 <span> 元素，设置关闭模态框按钮
+			var span = document.getElementsByClassName("close2")[0];
+
+			// 点击 <span> 元素上的叉, 关闭模态窗口
+			span.onclick = function()
+			{
+				modal2.style.display = "none";
+			}
+		</script>
+	</div>
+	<div class="unit">
+		<img class="unit_pic" id="pic6" src="stone_6.jpg" alt=" 受永嘉福瓦当硅胶模具 ">
+		<div class="unit_text_pic"> 受永嘉福瓦当硅胶模具 </div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic6");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex"
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+	</div>
+	<!--图片卡片5-->
+	<div class="unit">
+		<img class="unit_pic" id="pic7" src="stone_7.jpg" alt=" 受永嘉福瓦当硅胶图片 ">
+		<div class="unit_text_pic"> 受永嘉福瓦当硅胶图片 </div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic7");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex"
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+
+	</div>
+	<div class="unit">
+		<img class="unit_pic" id="pic8" src="stone_4.jpg" alt=" 受永嘉福瓦当硅胶拓印 ">
+		<div class="unit_text_pic"> 受永嘉福瓦当硅胶拓印 </div>
+		<!--js：弹出大图-->
+		<script>
+			// 获取模态窗口
+			var modal = document.getElementById("myModal");
+			// 获取图片模态框，alt 属性作为图片弹出中文本描述
+			var img = document.getElementById("pic8");
+			var modalImg = document.getElementById("pop_pic");
+			var captionText = document.getElementById("caption");
+			img.onclick = function()
+			{
+				modal.style.display = "flex"
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+
+			//关闭模态窗口
+			modal.onclick = function()
+			{
+				modal.style.display = "none";
+			}
+		</script>
+	</div>
+	<!--图片卡片5-->
+
+
+
+	<!--		&lt;!&ndash;图片卡片6&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic6" src="pic6.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic6");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		//关闭模态窗口-->
+<!--		modal.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		-->
+<!--	&lt;!&ndash; </div> &ndash;&gt;-->
+<!--	-->
+<!--	&lt;!&ndash;第2列&ndash;&gt;-->
+<!--	&lt;!&ndash; <div class="column"> &ndash;&gt;-->
+<!--		&lt;!&ndash;图片卡片7&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic7" src="pic7.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic7");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		//关闭模态窗口-->
+<!--		modal.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;图片卡片8&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic8" src="pic8.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic8");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		//关闭模态窗口-->
+<!--		modal.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;图片卡片9&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic9" src="pic9.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic9");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		//关闭模态窗口-->
+<!--		modal.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;图片卡片10&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic10" src="pic10.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic10");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		//关闭模态窗口-->
+<!--		modal.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;图片卡片11&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic11" src="pic11.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic11");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		//关闭模态窗口-->
+<!--		modal.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;图片卡片12&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic12" src="pic12.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic12");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		//关闭模态窗口-->
+<!--		modal.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		-->
+<!--	&lt;!&ndash; </div> &ndash;&gt;-->
+<!--	-->
+<!--	&lt;!&ndash;第3列&ndash;&gt;-->
+<!--	&lt;!&ndash; <div class="column"> &ndash;&gt;-->
+<!--		&lt;!&ndash;图片卡片13&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic13" src="pic13.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic13");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		// 获取 <span> 元素，设置关闭模态框按钮-->
+<!--		var span = document.getElementsByClassName("close")[0];-->
+
+<!--		// 点击 <span> 元素上的叉, 关闭模态窗口-->
+<!--		span.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;图片卡片14&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic14" src="pic14.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic14");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		// 获取 <span> 元素，设置关闭模态框按钮-->
+<!--		var span = document.getElementsByClassName("close")[0];-->
+
+<!--		// 点击 <span> 元素上的叉, 关闭模态窗口-->
+<!--		span.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;图片卡片15&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic15" src="pic15.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic15");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		// 获取 <span> 元素，设置关闭模态框按钮-->
+<!--		var span = document.getElementsByClassName("close")[0];-->
+
+<!--		// 点击 <span> 元素上的叉, 关闭模态窗口-->
+<!--		span.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;图片卡片16&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic16" src="pic16.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic16");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		// 获取 <span> 元素，设置关闭模态框按钮-->
+<!--		var span = document.getElementsByClassName("close")[0];-->
+
+<!--		// 点击 <span> 元素上的叉, 关闭模态窗口-->
+<!--		span.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;图片卡片17&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic17" src="pic17.jpg" alt="">-->
+<!--			<div class="unit_text_pic"></div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic17");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		// 获取 <span> 元素，设置关闭模态框按钮-->
+<!--		var span = document.getElementsByClassName("close")[0];-->
+
+<!--		// 点击 <span> 元素上的叉, 关闭模态窗口-->
+<!--		span.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--		&lt;!&ndash;图片卡片18&ndash;&gt;-->
+<!--		<div class="unit">-->
+<!--			<img class="unit_pic" id="pic18" src="pic18.jpg" alt=" ">-->
+<!--			<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--		// 获取模态窗口-->
+<!--		var modal = document.getElementById("myModal");-->
+<!--		// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--		var img = document.getElementById("pic18");-->
+<!--		var modalImg = document.getElementById("pop_pic");-->
+<!--		var captionText = document.getElementById("caption");-->
+<!--		img.onclick = function()-->
+<!--		{-->
+<!--			modal.style.display = "flex"-->
+<!--			modalImg.src = this.src;-->
+<!--			modalImg.alt = this.alt;-->
+<!--			captionText.innerHTML = this.alt;-->
+<!--		}-->
+
+<!--		// 获取 <span> 元素，设置关闭模态框按钮-->
+<!--		var span = document.getElementsByClassName("close")[0];-->
+
+<!--		// 点击 <span> 元素上的叉, 关闭模态窗口-->
+<!--		span.onclick = function()-->
+<!--		{ -->
+<!--			modal.style.display = "none";-->
+<!--		}-->
+<!--		</script>-->
+<!--		</div>-->
+<!--	&lt;!&ndash;图片卡片19&ndash;&gt;-->
+<!--	<div class="unit">-->
+<!--		<img class="unit_pic" id="pic19" src="pic19.jpg" alt=" ">-->
+<!--		<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--			// 获取模态窗口-->
+<!--			var modal = document.getElementById("myModal");-->
+<!--			// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--			var img = document.getElementById("pic18");-->
+<!--			var modalImg = document.getElementById("pop_pic");-->
+<!--			var captionText = document.getElementById("caption");-->
+<!--			img.onclick = function()-->
+<!--			{-->
+<!--				modal.style.display = "flex"-->
+<!--				modalImg.src = this.src;-->
+<!--				modalImg.alt = this.alt;-->
+<!--				captionText.innerHTML = this.alt;-->
+<!--			}-->
+
+<!--			// 获取 <span> 元素，设置关闭模态框按钮-->
+<!--			var span = document.getElementsByClassName("close")[0];-->
+
+<!--			// 点击 <span> 元素上的叉, 关闭模态窗口-->
+<!--			span.onclick = function()-->
+<!--			{-->
+<!--				modal.style.display = "none";-->
+<!--			}-->
+<!--		</script>-->
+<!--	</div>-->
+<!--	&lt;!&ndash;图片卡片18&ndash;&gt;-->
+<!--	<div class="unit">-->
+<!--		<img class="unit_pic" id="pic20" src="pic20.jpg" alt=" ">-->
+<!--		<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--			// 获取模态窗口-->
+<!--			var modal = document.getElementById("myModal");-->
+<!--			// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--			var img = document.getElementById("pic20");-->
+<!--			var modalImg = document.getElementById("pop_pic");-->
+<!--			var captionText = document.getElementById("caption");-->
+<!--			img.onclick = function()-->
+<!--			{-->
+<!--				modal.style.display = "flex"-->
+<!--				modalImg.src = this.src;-->
+<!--				modalImg.alt = this.alt;-->
+<!--				captionText.innerHTML = this.alt;-->
+<!--			}-->
+
+<!--			// 获取 <span> 元素，设置关闭模态框按钮-->
+<!--			var span = document.getElementsByClassName("close")[0];-->
+
+<!--			// 点击 <span> 元素上的叉, 关闭模态窗口-->
+<!--			span.onclick = function()-->
+<!--			{-->
+<!--				modal.style.display = "none";-->
+<!--			}-->
+<!--		</script>-->
+<!--	</div>-->
+<!--	&lt;!&ndash;图片卡片18&ndash;&gt;-->
+<!--	<div class="unit">-->
+<!--		<img class="unit_pic" id="pic21" src="pic21.jpg" alt=" ">-->
+<!--		<div class="unit_text_pic"> </div>-->
+<!--		&lt;!&ndash;js：弹出大图&ndash;&gt;-->
+<!--		<script>-->
+<!--			// 获取模态窗口-->
+<!--			var modal = document.getElementById("myModal");-->
+<!--			// 获取图片模态框，alt 属性作为图片弹出中文本描述-->
+<!--			var img = document.getElementById("pic21");-->
+<!--			var modalImg = document.getElementById("pop_pic");-->
+<!--			var captionText = document.getElementById("caption");-->
+<!--			img.onclick = function()-->
+<!--			{-->
+<!--				modal.style.display = "flex"-->
+<!--				modalImg.src = this.src;-->
+<!--				modalImg.alt = this.alt;-->
+<!--				captionText.innerHTML = this.alt;-->
+<!--			}-->
+
+<!--			// 获取 <span> 元素，设置关闭模态框按钮-->
+<!--			var span = document.getElementsByClassName("close")[0];-->
+
+<!--			// 点击 <span> 元素上的叉, 关闭模态窗口-->
+<!--			span.onclick = function()-->
+<!--			{-->
+<!--				modal.style.display = "none";-->
+<!--			}-->
+<!--		</script>-->
+<!--	</div>-->
+	<!-- </div> -->
+</div>
+
+<br>
+</body>
+</html>
